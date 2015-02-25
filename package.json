@@ -1,0 +1,25 @@
+{
+  "name": "east_coast_product",
+  "version": "1.0.0",
+  "description": "East Coast Product Website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EastCoastProduct/marketing-site.git"
+  },
+  "author": "East Coast Product",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EastCoastProduct/marketing-site/issues"
+  },
+  "homepage": "http://www.eastcoastproduct.com/",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-filter": "^2.0.1",
+    "gulp-gzip": "0.0.8",
+    "gulp-s3": "^0.3.0"
+  }
+}
