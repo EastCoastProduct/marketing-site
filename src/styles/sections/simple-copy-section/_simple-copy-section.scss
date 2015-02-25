@@ -1,0 +1,29 @@
+.simple-copy-section {
+  background-color: $primary-color;
+  color: #fff;
+  text-align: center;
+  padding: 100px 50px;
+  position: relative;
+
+  h1 {
+    font-weight: 200;
+    font-size: 26px;
+  }
+}
+
+.simple-copy-section:before {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin-left: -20px;
+  margin-top: -20px;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+}
+
+.simple-copy-section:before {
+  background-color: #fff;
+  top: 0;
+}

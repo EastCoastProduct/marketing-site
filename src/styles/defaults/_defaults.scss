@@ -1,0 +1,35 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: $primary-font;
+}
+
+#preload-wrapper {
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+
+  .fa-spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 40px;
+    margin-left: -40px;
+    margin-top: -40px;
+  }
+}

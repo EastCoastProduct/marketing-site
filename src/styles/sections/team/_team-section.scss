@@ -1,0 +1,139 @@
+.team-section {
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+  padding: 100px 20px;
+
+  h1 {
+    font-weight: 200;
+    margin-bottom: 50px;
+  }
+}
+
+.team-list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 100%;
+  width: 1000px;
+
+  li {
+    display: inline-block;
+    margin: 10px 10px 30px;
+  }
+
+  .team-member {
+    transition: background-size 0.2s ease;
+    cursor: pointer;
+    position: relative;
+    height: 200px;
+    width: 200px;
+    background-position: 50%;
+    background-size: 100%;
+    overflow: hidden;
+  }
+
+  .social-wrapper {
+    transition: bottom .5s ease;
+    position: absolute;
+    bottom: -50px;
+    left: 86px;
+    width: 188px;
+    margin-left: -80px;
+
+    i {
+      font-size: 22px;
+      margin: 0 3px;
+      color: #fff;
+      background-color: $primary-color;
+      padding: 9px;
+    }
+
+    .fa-envelope:hover {
+      background-color: $primary-dark;
+    }
+
+    .fa-github:hover {
+      background-color: #323232; // linkedin blue
+    }
+
+    .fa-linkedin:hover {
+      background-color: #3b5998; // linkedin blue
+    }
+
+    .fa-twitter:hover {
+      background-color: #5ea9dd; // twitter blue
+    }
+  }
+
+  .team-member:hover {
+    transition: background-size 0.2s ease;
+    background-size: 109%;
+
+    .social-wrapper {
+      transition: bottom .5s ease;
+      bottom: 10px;
+    }
+
+    .team01 {
+      background-image: url('.../assets/team/team01-bw.jpg');
+    }
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 200;
+  }
+
+
+
+  .team01 {
+    background-image: url('../assets/team/team01-bw.jpg');
+  }
+  .team01:hover {
+    transition: background .3s ease;
+    background-image: url('../assets/team/team01.jpg');
+  }
+  .team02 {
+    background-image: url('../assets/team/team02-bw.jpg');
+  }
+  .team02:hover {
+    transition: background .3s ease;
+    background-image: url('../assets/team/team02.jpg');
+  }
+  .team03 {
+    background-image: url('../assets/team/team03-bw.jpg');
+  }
+  .team03:hover {
+    transition: background .3s ease;
+    background-image: url('../assets/team/team03.jpg');
+  }
+  .team04 {
+    background-image: url('../assets/team/team04-bw.jpg');
+  }
+  .team04:hover {
+    transition: background .3s ease;
+    background-image: url('../assets/team/team04.jpg');
+  }
+  .team05 {
+    background-image: url('../assets/team/team05-bw.jpg');
+  }
+  .team05:hover {
+    transition: background .3s ease;
+    background-image: url('../assets/team/team05.jpg');
+  }
+  .team06 {
+    background-image: url('../assets/team/team06-bw.jpg');
+  }
+  .team06:hover {
+    transition: background .3s ease;
+    background-image: url('../assets/team/team06.jpg');
+  }
+}

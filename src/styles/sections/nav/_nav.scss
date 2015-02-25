@@ -1,0 +1,110 @@
+nav {
+  transition: background-color .4s ease;
+  transition: height .4s ease;
+  padding: 13px 0;
+  //box-shadow: 0 2px 5px rgba(0, 0, 0, 0.38);
+  position: fixed;
+  z-index: 9000;
+  background-color: rgba(255, 255, 255, 0.84);
+  width: 100%;
+  height: 60px;
+  top: 0;
+  
+  h1 {
+    display: inline-block;
+    float: left;
+    font-size: 20px;
+    margin: 4px 0 0 20px;
+
+    a {
+      font-family: $nav-h1-font;
+    }
+  }
+  
+  ul {
+    float: right;
+    list-style: none;
+    margin: 8px 20px 0 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+    padding-bottom: 17px;
+  }
+
+  li {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 20px;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+
+    a:hover {
+      color: $primary-color;
+      transition: border-bottom .2s ease;
+      border-bottom: solid $primary-color 5px;
+    }
+  }
+
+  .active {
+    color: $primary-color;
+    transition: border-bottom .2s ease;
+    border-bottom: solid $primary-color 5px;
+  }
+
+  @media screen and (max-width: 500px) {
+    text-align: center;
+    height: 90px;
+
+    h1 {
+      display: block;
+      float: none;
+      margin: 0;
+    }
+
+    ul {
+      float: none;
+      margin: 11px auto;
+      max-width: 100%;
+      padding: 0;
+    }
+  }
+}
+
+nav:hover {
+  transition: background-color .4s ease;
+  background-color: #fff;
+};
+
+.clear-nav {
+  transition: background-color .4s ease;
+  transition: height .4s ease;
+  background-color: transparent;
+  box-shadow: none;
+  padding: 23px 0;
+  height: 60px;
+
+  h1,
+  a {
+    color: #fff;
+  }
+
+  li {
+    a:hover {
+      color: $primary-color;
+      border: 0;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    h1 {
+      display: none;
+    }
+  }
+}
+
+.clear-nav:hover {
+  transition: background-color .4s ease;
+  background-color: transparent;
+}
