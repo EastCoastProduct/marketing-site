@@ -1,20 +1,12 @@
 
 // list of images to preload
 var listOfImages = [
-  'assets/header.jpg',
   'assets/header2.gif',
-  'assets/team/team01.jpg',
-  'assets/team/team01-bw.jpg',
-  'assets/team/team02.jpg',
-  'assets/team/team02-bw.jpg',
-  'assets/team/team03.jpg',
-  'assets/team/team03-bw.jpg',
-  'assets/team/team04.jpg',
-  'assets/team/team04-bw.jpg',
-  'assets/team/team05.jpg',
-  'assets/team/team05-bw.jpg',
-  'assets/team/team06.jpg',
-  'assets/team/team06-bw.jpg'
+  'assets/team/steve.gif',
+  'assets/team/chris.gif',
+  'assets/team/ivan.gif',
+  'assets/team/niksa.gif',
+  'assets/team/petar.gif'
   ];
 
 // preload images function

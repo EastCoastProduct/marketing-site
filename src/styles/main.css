@@ -100,7 +100,7 @@ nav:hover {
     border: 0; }
   @media screen and (max-width: 500px) {
     .clear-nav h1 {
-      display: none; } }
+      color: #B3aDad; } }
 
 .clear-nav:hover {
   transition: background-color .4s ease;
@@ -158,6 +158,10 @@ header {
   header .header-content {
     text-align: center;
     position: relative; }
+    @media screen and (max-width: 500px) {
+      header .header-content h1 {
+        font-size: 22px;
+        margin-top: 40px; } }
 
 .gradient-overlay {
   position: absolute;
@@ -195,13 +199,63 @@ header {
 
 footer {
   width: 100%;
-  text-align: center;
   background-color: #8DA94C;
   color: #fff;
   font-size: 12px;
-  padding: 30px 50px 150px;
+  padding: 30px 50px;
   font-weight: 200;
   position: relative; }
+  @media screen and (max-width: 600px) {
+    footer {
+      text-align: center; } }
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px; }
+  footer h1 {
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 10px; }
+  footer h2 {
+    font-size: 20px;
+    font-weight: 200;
+    margin: 0; }
+  footer ul {
+    margin: 20px 0;
+    padding: 0;
+    list-style: none; }
+  footer li {
+    border-right: solid 1px #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0 20px; }
+  footer li:first-child {
+    padding-left: 0; }
+  footer li:last-child {
+    border: 0;
+    padding-right: 0; }
+  footer div {
+    float: right;
+    text-align: right;
+    width: 250px;
+    max-width: 100%;
+    margin-top: 15px; }
+    @media screen and (max-width: 600px) {
+      footer div {
+        float: none;
+        text-align: center;
+        margin: 0 auto; } }
+    footer div h2 {
+      font-size: 22px;
+      font-weight: 800; }
+    footer div p:first-child {
+      font-size: 16px;
+      font-size: 16px; }
+    footer div p:last-child {
+      font-weight: 600;
+      font-size: 16px; }
+    footer div i {
+      font-size: 12px; }
 
 .team-section {
   background-color: #fff;
@@ -216,20 +270,23 @@ footer {
   list-style: none;
   margin: 0 auto;
   padding: 0;
-  max-width: 100%;
-  width: 1000px; }
+  max-width: 100%; }
   .team-list li {
     display: inline-block;
     margin: 10px 10px 30px; }
   .team-list .team-member {
+    transition: filter 0.5s ease;
     transition: background-size 0.2s ease;
     cursor: pointer;
     position: relative;
-    height: 200px;
+    height: 145px;
     width: 200px;
     background-position: 50%;
-    background-size: 100%;
-    overflow: hidden; }
+    background-size: 105%;
+    overflow: hidden;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); }
   .team-list .social-wrapper {
     transition: bottom .5s ease;
     position: absolute;
@@ -253,12 +310,14 @@ footer {
       background-color: #5ea9dd; }
   .team-list .team-member:hover {
     transition: background-size 0.2s ease;
-    background-size: 109%; }
+    transition: filter 0.5s ease;
+    background-size: 112%;
+    filter: grayscale(1%);
+    -webkit-filter: grayscale(1%);
+    filter: grayscale(1%); }
     .team-list .team-member:hover .social-wrapper {
       transition: bottom .5s ease;
       bottom: 10px; }
-    .team-list .team-member:hover .team01 {
-      background-image: url(".../assets/team/team01-bw.jpg"); }
   .team-list h2 {
     margin: 0;
     font-size: 18px;
@@ -268,35 +327,15 @@ footer {
     font-size: 16px;
     font-weight: 200; }
   .team-list .team01 {
-    background-image: url("../assets/team/team01-bw.jpg"); }
-  .team-list .team01:hover {
-    transition: background .3s ease;
-    background-image: url("../assets/team/team01.jpg"); }
+    background-image: url("../assets/team/chris.gif"); }
   .team-list .team02 {
-    background-image: url("../assets/team/team02-bw.jpg"); }
-  .team-list .team02:hover {
-    transition: background .3s ease;
-    background-image: url("../assets/team/team02.jpg"); }
+    background-image: url("../assets/team/steve.gif"); }
   .team-list .team03 {
-    background-image: url("../assets/team/team03-bw.jpg"); }
-  .team-list .team03:hover {
-    transition: background .3s ease;
-    background-image: url("../assets/team/team03.jpg"); }
+    background-image: url("../assets/team/ivan.gif"); }
   .team-list .team04 {
-    background-image: url("../assets/team/team04-bw.jpg"); }
-  .team-list .team04:hover {
-    transition: background .3s ease;
-    background-image: url("../assets/team/team04.jpg"); }
+    background-image: url("../assets/team/petar.gif"); }
   .team-list .team05 {
-    background-image: url("../assets/team/team05-bw.jpg"); }
-  .team-list .team05:hover {
-    transition: background .3s ease;
-    background-image: url("../assets/team/team05.jpg"); }
-  .team-list .team06 {
-    background-image: url("../assets/team/team06-bw.jpg"); }
-  .team-list .team06:hover {
-    transition: background .3s ease;
-    background-image: url("../assets/team/team06.jpg"); }
+    background-image: url("../assets/team/niksa.gif"); }
 
 .contact-section {
   background-color: #F2F2F2;
