@@ -107,7 +107,7 @@ nav:hover {
   background-color: transparent; }
 
 .cinemagraph {
-  background-image: url("../assets/header2.gif");
+  background-image: url("../assets/header2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -327,15 +327,15 @@ footer {
     font-size: 16px;
     font-weight: 200; }
   .team-list .team01 {
-    background-image: url("../assets/team/chris.gif"); }
+    background-image: url("../assets/team/chris.jpg"); }
   .team-list .team02 {
-    background-image: url("../assets/team/steve.gif"); }
+    background-image: url("../assets/team/steve.jpg"); }
   .team-list .team03 {
-    background-image: url("../assets/team/ivan.gif"); }
+    background-image: url("../assets/team/ivan.jpg"); }
   .team-list .team04 {
-    background-image: url("../assets/team/petar.gif"); }
+    background-image: url("../assets/team/petar.jpg"); }
   .team-list .team05 {
-    background-image: url("../assets/team/niksa.gif"); }
+    background-image: url("../assets/team/niksa.jpg"); }
 
 .contact-section {
   background-color: #F2F2F2;

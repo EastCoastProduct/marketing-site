@@ -44,11 +44,11 @@ gulp.task('sass', function(){
 
 gulp.task('compress-js', function(){
   return gulp.src(['./src/js/jquery.min.js',
-    './src/js/wow.min.js', 
+    './src/js/wow.min.js',
     './src/js/init.js',
     './src/js/scripts.js' ])
     .pipe(concat('bundle.min.js'))
-    // .pipe(uglify())
+    .pipe(uglify())
     .pipe(gulp.dest('./dist/js'));
 })
 
