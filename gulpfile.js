@@ -48,7 +48,7 @@ gulp.task('compress-js', function(){
     './src/js/init.js',
     './src/js/scripts.js' ])
     .pipe(concat('bundle.min.js'))
-    // .pipe(uglify())
+    .pipe(uglify())
     .pipe(gulp.dest('./dist/js'));
 })
 
