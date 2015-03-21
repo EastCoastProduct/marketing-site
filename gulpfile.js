@@ -16,7 +16,7 @@ var options = {
   gzippedOnly: true
 };
 
-// var aws = JSON.parse(fs.readFileSync('./aws.json'));
+var aws = JSON.parse(fs.readFileSync('./aws.json'));
 
 gulp.task('copy-images', function(){
   return gulp.src(['./src/assets/**/*.{png,gif,jpg}'])
@@ -44,7 +44,7 @@ gulp.task('sass', function(){
 
 gulp.task('compress-js', function(){
   return gulp.src(['./src/js/jquery.min.js',
-    './src/js/wow.min.js', 
+    './src/js/wow.min.js',
     './src/js/init.js',
     './src/js/scripts.js' ])
     .pipe(concat('bundle.min.js'))
