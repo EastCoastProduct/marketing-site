@@ -1,5 +1,4 @@
-body,
-html {
+body, html {
   margin: 0;
   padding: 0;
   min-width: 100%;
@@ -10,7 +9,7 @@ body {
 
 * {
   box-sizing: border-box;
-  font-family: "Open Sans Condensed", sans-serif; }
+  font-family: 'Open Sans Condensed', sans-serif; }
 
 #preload-wrapper {
   background-color: #fff;
@@ -28,6 +27,9 @@ body {
     margin-left: -40px;
     margin-top: -40px; }
 
+section {
+  z-index: 1; }
+
 nav {
   transition: background-color .4s ease;
   transition: height .4s ease;
@@ -44,7 +46,7 @@ nav {
     font-size: 20px;
     margin: 4px 0 0 20px; }
     nav h1 a {
-      font-family: "Open Sans Condensed", sans-serif; }
+      font-family: 'Open Sans Condensed', sans-serif; }
   nav ul {
     float: right;
     list-style: none;
@@ -92,8 +94,7 @@ nav:hover {
   box-shadow: none;
   padding: 23px 0;
   height: 60px; }
-  .clear-nav h1,
-  .clear-nav a {
+  .clear-nav h1, .clear-nav a {
     color: #fff; }
   .clear-nav li a:hover {
     color: #8DA94C;
@@ -107,24 +108,23 @@ nav:hover {
   background-color: transparent; }
 
 .cinemagraph {
-  background-image: url("../assets/header2.jpg");
+  background-attachment: fixed;
+  background-image: url('../assets/header2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
   position: fixed;
   width: 100%;
-  height: 450px; }
+  height: 450px;
+  z-index: 0; }
 
 header {
   padding: 50px;
   width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50%;
   position: relative;
-  height: 450px; }
-  header h1,
-  header h2 {
+  height: 450px;
+  z-index: 1; }
+  header h1, header h2 {
     color: #fff;
     padding: 10px; }
   header h1 {
@@ -327,15 +327,15 @@ footer {
     font-size: 16px;
     font-weight: 200; }
   .team-list .team01 {
-    background-image: url("../assets/team/chris.jpg"); }
+    background-image: url('../assets/team/chris.jpg'); }
   .team-list .team02 {
-    background-image: url("../assets/team/steve.jpg"); }
+    background-image: url('../assets/team/steve.jpg'); }
   .team-list .team03 {
-    background-image: url("../assets/team/ivan.jpg"); }
+    background-image: url('../assets/team/ivan.jpg'); }
   .team-list .team04 {
-    background-image: url("../assets/team/petar.jpg"); }
+    background-image: url('../assets/team/petar.jpg'); }
   .team-list .team05 {
-    background-image: url("../assets/team/niksa.jpg"); }
+    background-image: url('../assets/team/niksa.jpg'); }
 
 .contact-section {
   background-color: #F2F2F2;
@@ -363,15 +363,13 @@ footer {
     transition: top .3s ease;
     z-index: 1;
     top: 0; }
-  .contact-section input,
-  .contact-section textarea {
+  .contact-section input, .contact-section textarea {
     border: 0;
     margin: 5px 0 10px;
     outline: none;
     padding: 5px;
     width: 100%; }
-  .contact-section input:focus,
-  .contact-section textarea:focus {
+  .contact-section input:focus, .contact-section textarea:focus {
     border-color: rgba(0, 0, 0, 0.3); }
   .contact-section input {
     height: 40px; }
@@ -411,5 +409,3 @@ footer {
 .simple-copy-section:before {
   background-color: #fff;
   top: 0; }
-
-/*# sourceMappingURL=main.css.map */
