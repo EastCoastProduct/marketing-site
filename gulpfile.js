@@ -1,15 +1,16 @@
 'use strict';
 
-var gulp = require('gulp'),
-  s3 = require('gulp-s3'),
-  gzip = require('gulp-gzip'),
-  filter = require('gulp-filter'),
-  copy = require('gulp-copy'),
-  sass = require('gulp-sass'),
-  uglify = require('gulp-uglify'),
-  concat = require('gulp-concat'),
-  htmlreplace = require('gulp-html-replace'),
-  fs = require('fs');
+var fs          = require('fs'),
+    gulp        = require('gulp'),
+    concat      = require('gulp-concat'),
+    copy        = require('gulp-copy'),
+    filter      = require('gulp-filter'),
+    gzip        = require('gulp-gzip'),
+    htmlreplace = require('gulp-html-replace'),
+    minifyCSS   = require('gulp-minify-css'),
+    s3          = require('gulp-s3'),
+    sass        = require('gulp-sass'),
+    uglify      = require('gulp-uglify');
 
 var options = {
   headers: {'Cache-Control': 'max-age=315360000, no-transform, public'},
@@ -26,19 +27,20 @@ gulp.task('copy-images', function(){
 gulp.task('build-html', function(){
   return gulp.src('./src/index.html')
     .pipe(htmlreplace({
-      'js': 'js/bundle.min.js'
+      'js': 'js/bundle.min.js',
+      'css': 'styles/main.min.css'
     }))
     .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('copy-css-vendor', function(){
-  return gulp.src('./src/styles/vendor/**/*.css')
-    .pipe(copy('./dist/styles', {prefix: 2}));
-});
-
-gulp.task('sass', function(){
-  return gulp.src(['./src/styles/**/*.scss'])
+gulp.task('compress-style', function(){
+  var scssFilter = filter('**/*.scss');
+  return gulp.src(['./src/styles/vendor/**/*.css', './src/styles/**/*.scss'])
+    .pipe(scssFilter)
     .pipe(sass())
+    .pipe(scssFilter.restore())
+    .pipe(concat('main.min.css'))
+    .pipe(minifyCSS())
     .pipe(gulp.dest('./dist/styles'));
 });
 
@@ -55,8 +57,7 @@ gulp.task('compress-js', function(){
 gulp.task('build', [
   'copy-images',
   'build-html',
-  'sass',
-  'copy-css-vendor',
+  'compress-style',
   'compress-js'
 ]);
 
