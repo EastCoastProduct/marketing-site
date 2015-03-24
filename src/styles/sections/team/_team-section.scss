@@ -32,8 +32,6 @@
     background-size: 105%;
     overflow: hidden;
     filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
   }
 
   .social-wrapper {
@@ -73,8 +71,6 @@
     transition: background-size 0.2s ease;
     transition: filter 0.5s ease;
     background-size: 112%;
-    filter: grayscale(1%);
-    -webkit-filter: grayscale(1%);
     filter: grayscale(1%);
 
     .social-wrapper {
