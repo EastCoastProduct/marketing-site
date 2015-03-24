@@ -27,6 +27,10 @@ body {
     margin-left: -20px;
     margin-top: -20px; }
 
+#container {
+  width: 100%;
+  position: absolute; }
+
 section {
   z-index: 1; }
 
@@ -108,12 +112,12 @@ nav:hover {
   background-color: transparent; }
 
 .cinemagraph {
-  background-attachment: fixed;
   background-image: url('../assets/header2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
   position: fixed;
+  top: 0;
   width: 100%;
   height: 450px;
   z-index: 0; }
@@ -204,7 +208,8 @@ footer {
   font-size: 12px;
   padding: 30px 50px;
   font-weight: 200;
-  position: relative; }
+  position: relative;
+  z-index: 1; }
   @media screen and (max-width: 600px) {
     footer {
       text-align: center; } }
