@@ -1,5 +1,16 @@
+# DS_Store
 .DS_Store
-.sass-cache
+
+# css and sass cache
+src/styles/*.css
+**/.sass-cache
+**/.sass-cache/
+
+# AWS Configuration
 aws.json
+
+# Dependency directory
 node_modules
-dist
+
+# compiled dist/ directory
+dist/
