@@ -40,6 +40,8 @@
       $('header').css("height", window.innerHeight);
       $('.cinemagraph').css('height', window.innerHeight);
       var newHeaderContentHeight = (window.innerHeight / 2) - ($('.header-content').height()/2 + 50); // 50%
+      newHeaderContentHeight -= $('.logo').height();
+      newHeaderContentHeight = newHeaderContentHeight < 0 ? 0 : newHeaderContentHeight;
       $('.header-content').css("top", newHeaderContentHeight);
   });
 

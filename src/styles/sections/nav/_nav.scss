@@ -16,7 +16,12 @@ nav {
     margin: 4px 0 0 20px;
 
     a {
+      display: none;
       font-family: $nav-h1-font;
+    }
+
+    .home-text {
+      display: inline;
     }
   }
 
@@ -87,6 +92,10 @@ nav:hover {
   h1,
   a {
     color: #fff;
+  }
+
+  .home-text {
+    display: none;
   }
 
   li {
