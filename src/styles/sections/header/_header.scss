@@ -17,6 +17,17 @@ header {
   height: 450px;
   z-index: 1;
 
+  .logo {
+    width: 200px;
+
+    @media screen and (max-width: 500px) {
+      width: 150px;
+      padding-top: 20px;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+
   h1,
   h2 {
     color: #fff;
