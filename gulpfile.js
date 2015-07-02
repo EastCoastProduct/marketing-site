@@ -73,7 +73,7 @@ gulp.task('build', [
   'build-html'
 ]);
 
-gulp.task('publish', function(){
+gulp.task('publish', ['build'], function(){
   return gulp.src('./dist/**')
     .pipe(gzip())
     .pipe(s3(aws, options));
