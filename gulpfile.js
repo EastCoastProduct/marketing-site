@@ -23,7 +23,7 @@ var options = {
 var aws = JSON.parse(fs.readFileSync('./aws.json'));
 
 gulp.task('copy-images', ['clean'], function(){
-  return gulp.src(['./src/assets/**/*.{png,gif,jpg}'])
+  return gulp.src(['./src/assets/**/*.{png,gif,jpg,ico}'])
     .pipe(gulp.dest('./dist/assets', {prefix: 2}));
 });
 
