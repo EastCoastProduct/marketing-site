@@ -65,11 +65,6 @@
       $('nav').addClass('clear-nav');
     };
 
-    if(isVisible('#team')) {
-      $('a[href="#team"]').addClass('active');
-    } else {
-      $('a[href="#team"]').removeClass('active');
-    }
     if(isVisible('#contact')) {
       $('a[href="#contact"]').addClass('active');
     } else {
